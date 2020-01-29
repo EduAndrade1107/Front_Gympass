@@ -5,10 +5,8 @@ const gymPage = client.page.searchPageGymElements();
 module.exports = {
     newTab: () => {
         window.changeWindowContext(client, 1)
-        .pause(2000)
-        .waitForElementPresent('@clickFavorite', 20000)    
         return gymPage
-        .waitForElementPresent('@clickFavorite', 20000)    
+        .waitForElementPresent('@clickFavorite', 5000)    
     },
     clickFavorite: () => {
         return gymPage
@@ -16,7 +14,6 @@ module.exports = {
     },
     unselectFavorite: () => {
         return gymPage
-        .expect.element('@unselectFavorite').to.be.present
-        .click('@clickFavorite')
+        .click('@unselectFavorite')
     }
 }

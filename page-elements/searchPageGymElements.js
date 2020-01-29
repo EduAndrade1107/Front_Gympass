@@ -1,10 +1,12 @@
 module.exports = {
     elements: {
         clickFavorite: {
-            selector: 'div[class="sc-aewfc bcwoEe"]'
+            selector: '//*[@id="app"]/div/div[2]/div/section/div/div/div/div/div[2]/div[1]/div/span/div',
+            locateStrategy: 'xpath'
         },
         unselectFavorite: {
-            selector: 'div[class="sc-eXNvrr hOGWHY"]'
+            selector: '//*[@id="app"]/div/div[2]/div/section/div/div/div/div/div[2]/div[1]/div/span/div',
+            locateStrategy: 'xpath'
         },
     }
 }
