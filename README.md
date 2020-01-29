@@ -23,7 +23,7 @@ $~ npm install
 
 ### To run tests use npm and aliases configured in package.json.
 ```terminal
-$~ npm run e2e-test
+$~ npm test
 ```
 
 Feel free to update anything you miss in here! :)
