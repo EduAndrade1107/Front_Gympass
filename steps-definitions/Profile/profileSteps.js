@@ -1,6 +1,6 @@
 const { Given, Then, When } = require('cucumber');
 
-const profileActions = require('../page-actions/profileActions.js');
+const profileActions = require('../../page-actions/Profile/profileActions.js');
 
 When('I click on User Dependents Menu', () => {
     return profileActions.clickOnUserDependentsMenu();

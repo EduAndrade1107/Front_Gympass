@@ -1,6 +1,6 @@
 const { Given, Then, When } = require('cucumber');
 
-const facebookLogin = require('../page-actions/facebookLoginActions.js');
+const facebookLogin = require('../../page-actions/Login/facebookLoginActions.js');
 
 When('I insert a Facebook email {string}', (facebookEmail) => {
     return facebookLogin.insertFacebookEmail(facebookEmail);

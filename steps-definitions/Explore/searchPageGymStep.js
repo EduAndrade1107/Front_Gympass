@@ -1,6 +1,6 @@
 const { Given, Then, When } = require('cucumber');
 
-const pageGym = require('../page-actions/searchPageGymActions.js');
+const pageGym = require('../../page-actions/Explore/searchPageGymActions.js');
 
 Given('a new page open', function () {                                 
     return  pageGym.newTab();                                                   
@@ -11,5 +11,9 @@ Given('a new page open', function () {
 });
 
 Then('so I must see favorite gym', function () {                      
-    return  pageGym.unselectFavorite()
+  pageGym.unselectFavorite()
+  pageGym.assertLabelMostarMais()
+  pageGym.assertLabelInformacoesGerais()
+  pageGym.assertLabelAvaliacao()
+  return pageGym.assertLabelTodasAvaliacao()
 });                                                                   

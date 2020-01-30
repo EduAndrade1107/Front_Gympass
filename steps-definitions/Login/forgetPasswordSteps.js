@@ -1,6 +1,6 @@
 const { Given, Then, When } = require('cucumber');
 
-const forgetPasswordActions = require('../page-actions/forgetPasswordActions.js');
+const forgetPasswordActions = require('../../page-actions/Login/forgetPasswordActions.js');
 
 When('I insert an email to receive instructions {string}', (email) => {
     return forgetPasswordActions.insertEmail(email);

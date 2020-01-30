@@ -1,6 +1,6 @@
 const { Given, Then, When } = require('cucumber');
 
-const searchFilterAcitons = require('../page-actions/searchFilterActions.js');
+const searchFilterAcitons = require('../../page-actions/Explore/searchFilterActions.js');
 
 Then('click value plan', () => {
     return searchFilterAcitons.sliderValorPlano()

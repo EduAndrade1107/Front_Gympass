@@ -11,14 +11,17 @@ module.exports = {
         server_path: chromedriver.path,
         port: 9515,
     },
-
+    
     test_settings: {
         default: {
             desiredCapabilities: {
                 browserName: 'chrome',
                 'goog:chromeOptions':{
                 args: [
-                    'start-maximized', '--disable-infobars', '--disable-notifications', '--ignore-ssl-errors'
+                    'start-maximized', 
+                    '--disable-infobars', 
+                    '--disable-notifications', 
+                    '--ignore-ssl-errors'
                 ],
                 excludeSwitches: [
                     'enable-automation'

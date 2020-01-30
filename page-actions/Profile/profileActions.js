@@ -1,6 +1,6 @@
 const { client } = require('nightwatch-api');
 
-const profile = client.page.profileElements();
+const profile = client.page.Profile.profileElements();
 
 module.exports = {
 

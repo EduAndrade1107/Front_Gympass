@@ -1,6 +1,6 @@
 const { client } = require('nightwatch-api');
 
-const login = client.page.loginElements();
+const login = client.page.Login.loginElements();
 
 module.exports = {
 

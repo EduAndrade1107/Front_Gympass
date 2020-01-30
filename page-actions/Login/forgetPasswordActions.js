@@ -1,6 +1,6 @@
 const { client } = require('nightwatch-api');
 
-const forgetPassword = client.page.forgetPasswordElements();
+const forgetPassword = client.page.Login.forgetPasswordElements();
 
 module.exports = {
 

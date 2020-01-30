@@ -1,6 +1,6 @@
 const { client } = require('nightwatch-api');
 
-const searchFilters = client.page.searchFilterElements();
+const searchFilters = client.page.Explore.searchFilterElements();
 
 module.exports = {
     sliderValorPlano: () => {

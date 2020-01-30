@@ -1,6 +1,6 @@
 const { Given, Then, When } = require('cucumber');
 
-const searchActions = require('../page-actions/searchActions.js');
+const searchActions = require('../../page-actions/Explore/searchActions.js');
 
 Given('I select gym', function () {
   searchActions.menuBusca();

@@ -1,6 +1,6 @@
 const { client } = require('nightwatch-api');
 
-const home = client.page.homeElements();
+const home = client.page.Home.homeElements();
 
 module.exports = {
 

@@ -1,7 +1,7 @@
 const { Given, Then, When } = require('cucumber');
 
-const homeActions = require('../page-actions/homeActions.js');
-const loginActions = require('../page-actions/loginAcitons.js');
+const homeActions = require('../../page-actions/Home/homeActions.js');
+const loginActions = require('../../page-actions/Login/loginAcitons.js');
 
 Given('I am logged in Gympass webpage with valid {string} and {string}', (email, password) => {
     homeActions.openGympassHomePage();

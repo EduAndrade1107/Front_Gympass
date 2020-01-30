@@ -1,5 +1,5 @@
 const { client } = require('nightwatch-api');
-const search = client.page.searchElements();
+const search = client.page.Explore.searchElements();
 
 module.exports = {
     menuBusca: () => {

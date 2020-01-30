@@ -1,6 +1,6 @@
 const { Given, Then, When } = require('cucumber');
 
-const loginActions = require('../page-actions/loginAcitons.js');
+const loginActions = require('../../page-actions/Login/loginAcitons.js');
 
 When('I insert an email {string}', (email) => {
     return loginActions.insertEmail(email);
