@@ -23,6 +23,19 @@ module.exports = {
         assertLabelInformacoesGerais: {
             selector: '//section//h2[contains( text(), "Informações gerais")]',
             locateStrategy: 'xpath'
-        }
+        },
+        assertLabelEBomSaber: {
+            selector: '//div//button[contains(text(), "É bom saber")]',
+            locateStrategy: 'xpath'
+        },
+        clickEvaluation: {
+            selector: '//*[@id="app"]/div/div[2]/div/div[3]/div/div[2]/section[3]/div/div[1]/div[2]/span',
+            locateStrategy: 'xpath'
+        },
+        modalEvaluation: {
+            selector: '//*[@id="modal"]/div/div/div[1]/div/span',
+            locateStrategy: 'xpath'
+        },
+
     }
 }

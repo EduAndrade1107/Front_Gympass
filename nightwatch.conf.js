@@ -18,6 +18,7 @@ module.exports = {
                 browserName: 'chrome',
                 'goog:chromeOptions':{
                 args: [
+                    'start-fullscreen',
                     'start-maximized', 
                     '--disable-infobars', 
                     '--disable-notifications', 

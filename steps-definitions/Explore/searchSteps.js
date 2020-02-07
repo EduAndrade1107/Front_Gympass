@@ -33,4 +33,8 @@ When('I click on my Gyms', () => {
     return searchActions.btnFiltros()
   });
 
+  Then('click Gym List', function() {
+    return searchActions.selectGymList()
+  });
+
  

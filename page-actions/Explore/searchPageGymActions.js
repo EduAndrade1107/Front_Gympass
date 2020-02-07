@@ -6,38 +6,51 @@ module.exports = {
     newTab: () => {
         window.changeWindowContext(client, 1)
         return gymPage
-        .waitForElementPresent('@clickFavorite', 5000)    
+            .waitForElementPresent('@clickFavorite', 10000)
     },
     clickFavorite: () => {
         return gymPage
-        .click('@clickFavorite')
+            .click('@clickFavorite')
     },
     unselectFavorite: () => {
         return gymPage
-        .click('@unselectFavorite')
+            .click('@unselectFavorite')
     },
     assertLabelAvaliacao: () => {
         return gymPage
-        .moveToElement('@assertLabelAvaliacao', 10, 10)
-        .waitForElementPresent('@assertLabelAvaliacao')
-        .pause(1000);
+            .moveToElement('@assertLabelAvaliacao', 10, 10)
+            .waitForElementPresent('@assertLabelAvaliacao')
     },
     assertLabelTodasAvaliacao: () => {
         return gymPage
-        .moveToElement('@assertLabelTodasAvaliacao', 10, 10)
-        .waitForElementPresent('@assertLabelTodasAvaliacao')
-        .pause(1000);
+            .moveToElement('@assertLabelTodasAvaliacao', 10, 10)
+            .waitForElementPresent('@assertLabelTodasAvaliacao')
     },
-    assertLabelMostarMais: () => {
+    assertLabelMostrarMais: () => {
         return gymPage
-        .moveToElement('@assertLabelMostarMais', 10, 10)
-        .waitForElementPresent('@assertLabelMostarMais')
-        .pause(1000);
+            .moveToElement('@assertLabelMostrarMais', 10, 10)
+            .waitForElementPresent('@assertLabelMostrarMais')
     },
+    assertLabelEBomSaber: () => {
+        return gymPage
+            .moveToElement('@assertLabelEBomSaber', 10, 10)
+            .waitForElementPresent('@assertLabelEBomSaber')
+    },
+
     assertLabelInformacoesGerais: () => {
         return gymPage
-        .moveToElement('@assertLabelInformacoesGerais', 10, 10)
-        .waitForElementPresent('@assertLabelInformacoesGerais')
-        .pause(1000);
+            .moveToElement('@assertLabelInformacoesGerais', 10, 10)
+            .waitForElementPresent('@assertLabelInformacoesGerais')
     },
+    clickEvaluation: () => {
+        return gymPage
+        .click('@clickEvaluation')
+    },
+    modalEvaluation: () => {
+        window.changeWindowContext(client, 1)
+        return gymPage
+        .click('@modalEvaluation')
+        .pause(2000)
+    },
+
 }

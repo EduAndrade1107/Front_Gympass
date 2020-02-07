@@ -23,10 +23,13 @@ module.exports = {
             .pause(2500)
             .setValue('@inputAcademia', "Ride State")
     },
+    selectGymList: () => {
+        return search
+            .click('@selectGymList')
+    },
     clickEnter: () => {
         search
             .setValue('@inputAcademia', new Array(1) .fill(search.api.Keys.ENTER))
-           .pause(1500)
             // .waitForElementPresent('@labelResultadoBusca', 6000)
             //.assert.containsText('@labelResultadoBusca', 'Resultados com ride state');
     },
@@ -43,7 +46,7 @@ module.exports = {
     },
     clickCard: () => {
         return search
-        .pause(1000)
+        .waitForElementPresent('@selectCard', 5000)
         .click('@selectCard')
             //.assert.containsText('@assertCardEndereco', "Rua Coronel Joaquim Ferreira Lôbo, 152")
             //.assert.containsText('@assertCardDisponibilidade', "no seu plano")

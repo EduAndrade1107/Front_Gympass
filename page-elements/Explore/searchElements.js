@@ -44,6 +44,9 @@ module.exports = {
         },
         selectCard: {
             selector: 'div[class="sc-eXEjpC kzCTZv"]'
+        },
+        selectGymList: {
+            selector: 'a[id="ListItem"]'
         }
     }
 }
