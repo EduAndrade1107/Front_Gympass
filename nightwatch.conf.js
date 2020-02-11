@@ -11,25 +11,25 @@ module.exports = {
         server_path: chromedriver.path,
         port: 9515,
     },
-    
+
     test_settings: {
         default: {
             desiredCapabilities: {
                 browserName: 'chrome',
-                'goog:chromeOptions':{
-                args: [
-                    'start-fullscreen',
-                    'start-maximized', 
-                    '--disable-infobars', 
-                    '--disable-notifications', 
-                    '--ignore-ssl-errors'
-                ],
-                excludeSwitches: [
-                    'enable-automation'
-                ],
-                useAutomationExtension: false
-                }   
+                'goog:chromeOptions': {
+                    args: [
+                        'start-fullscreen',
+                        'start-maximized',
+                        '--disable-infobars',
+                        '--disable-notifications',
+                        '--ignore-ssl-errors'
+                    ],
+                    excludeSwitches: [
+                        'enable-automation'
+                    ],
+                    useAutomationExtension: false
+                }
             }
-        }    
+        }
     },
 }

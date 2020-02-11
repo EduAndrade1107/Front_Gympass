@@ -9,11 +9,11 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         assertLabelAvaliacao: {
-            selector: '//section//h2[contains( text(), "Avaliações")]',
+            selector: '//*[@id="app"]/div/div[2]/div/div[3]/div/div[2]/section[3]/h2',
             locateStrategy: 'xpath'
         },
         assertLabelTodasAvaliacao: {
-            selector: '//div//span[contains( text(), "Ver todas as avaliações")]',
+            selector: '//*[@id="app"]/div/div[2]/div/div[3]/div/div[2]/section[3]/div/div[2]/div[2]/span',
             locateStrategy: 'xpath'
         },
         assertLabelMostarMais: {
@@ -21,11 +21,11 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         assertLabelInformacoesGerais: {
-            selector: '//section//h2[contains( text(), "Informações gerais")]',
+            selector: '//*[@id="app"]/div/div[2]/div/div[3]/div/div[2]/section[2]/h2    ',
             locateStrategy: 'xpath'
         },
         assertLabelEBomSaber: {
-            selector: '//div//button[contains(text(), "É bom saber")]',
+            selector: '//button[contains(text(), "É bom saber")]',
             locateStrategy: 'xpath'
         },
         clickEvaluation: {

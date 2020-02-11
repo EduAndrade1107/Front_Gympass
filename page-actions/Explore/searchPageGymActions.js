@@ -50,7 +50,12 @@ module.exports = {
         window.changeWindowContext(client, 1)
         return gymPage
         .click('@modalEvaluation')
-        .pause(2000)
     },
-
+    closeWindow: () => {
+        window.changeWindowContext(client, 0)
+        .closeWindow()
+        window.changeWindowContext(client, 0)
+        return gymPage
+        .pause(500)
+    }
 }

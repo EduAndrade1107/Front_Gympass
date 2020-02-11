@@ -24,10 +24,10 @@ After(function (scenario) {
       })
   }),
 
-  client.execute(
-    `localStorage.clear();
+    client.execute(
+      `localStorage.clear();
     sessionStorage.clear();`
-  ).deleteCookies().refresh()
+    ).deleteCookies().refresh()
 });
 
 AfterAll(async () => {

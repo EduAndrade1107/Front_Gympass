@@ -10,12 +10,13 @@ When('click favorite', function () {
   return pageGym.clickFavorite();
 });
 
-Then('I click write a review', function() {
+Then('I click write a review', function () {
   return pageGym.clickEvaluation()
 });
 
-Then('the evaluation mode is displayed', function() {
-  return pageGym.modalEvaluation()
+Then('the evaluation mode is displayed', function () {
+  pageGym.modalEvaluation()
+  return pageGym.closeWindow()
 });
 
 Then('so I must see favorite gym', function () {
@@ -23,5 +24,6 @@ Then('so I must see favorite gym', function () {
   pageGym.assertLabelEBomSaber()
   pageGym.assertLabelInformacoesGerais()
   pageGym.assertLabelAvaliacao()
-  return pageGym.assertLabelTodasAvaliacao()
+  pageGym.assertLabelTodasAvaliacao()
+  return pageGym.closeWindow()
 });          
