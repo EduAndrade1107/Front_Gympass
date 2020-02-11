@@ -1,6 +1,6 @@
 pipeline{
     agent {
-        docker {image "node"}
+        docker {image "eduqa/node-wd"}
     }
     stages {
         stage('Build') {
