@@ -2,7 +2,8 @@ module.exports = {
     
     elements: {
         sliderValorPlano: {
-            selector: 'div[class="sc-iiUIRa jwkJSc"]'
+            selector: '//*[@id="app"]/div/div[2]/div/div[4]/div/div[2]/div/div/div/div/div/div[1]/div/div/div[4]/div',
+            locateStrategy: 'xpath'
         },
         labelMensagemslider: {
             selector: 'p[class="sc-fyjhYU jsWdUC"]'
@@ -39,7 +40,7 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         btnAplicarFiltros: {
-            selector: 'button[class="sc-feryYK bfsbpv"]'
+            selector: '//*[@id="app"]/div/div[2]/div/div[4]/div/div[2]/div/footer/button'
         },
         clickPage: {
             selector: 'div[class="sc-jqIZGH gOxefV"]'

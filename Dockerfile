@@ -35,13 +35,13 @@ RUN apt-get update \
     locales sudo openssh-client ca-certificates tar gzip parallel \
     net-tools netcat unzip zip bzip2 gnupg curl wget make jq
 
-RUN groupadd --gid 3434 qaninja \
-  && useradd --uid 3434 --gid qaninja --shell /bin/bash --create-home qaninja \
-  && echo 'qaninja ALL=NOPASSWD: ALL' >> /etc/sudoers.d/50-qaninja \
+RUN groupadd --gid 3434 eduqa \
+  && useradd --uid 3434 --gid eduqa --shell /bin/bash --create-home eduqa \
+  && echo 'eduqa ALL=NOPASSWD: ALL' >> /etc/sudoers.d/50-eduqa \
   && echo 'Defaults    env_keep += "DEBIAN_FRONTEND"' >> /etc/sudoers.d/env_keep
 
-USER qaninja
-ENV PATH /home/qaninja/.local/bin:/home/qaninja/bin:${PATH}
+USER eduqa
+ENV PATH /home/eduardoandrade/.local/bin:/home/eduardoandrade/bin:${PATH}
 
 #
 # Install Java 11 LTS / OpenJDK 11
