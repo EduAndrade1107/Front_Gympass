@@ -350,5 +350,5 @@ MigrationBackup/
 .ionide/
 
 #exclude Reports and Screenshots
-report/
-screenshots/
+report
+screenshots

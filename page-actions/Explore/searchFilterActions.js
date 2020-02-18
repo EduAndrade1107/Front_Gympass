@@ -5,7 +5,7 @@ const searchFilters = client.page.Explore.searchFilterElements();
 module.exports = {
     sliderValorPlano: () => {
         return searchFilters
-            .waitForElementVisible('@sliderValorPlano', 7000)
+            .waitForElementVisible('@sliderValorPlano', 10000)
             .click('@sliderValorPlano')
             .setValue('@sliderValorPlano', new Array(5).fill(searchFilters.api.Keys.RIGHT_ARROW));
 
@@ -19,12 +19,12 @@ module.exports = {
         return searchFilters
             .click('@selectComodidades')
             .click('@clickComodidades')
-            .waitForElementPresent('@unselectComodidades', 5000)
+            .waitForElementPresent('@unselectComodidades', 10000)
             .click('@unselectComodidades')
     },
     selectOrdenarPor: () => {
         return searchFilters
-            .moveToElement('@ordenarPorAvaliacoes', 10, 10)
+            .moveToElement('@selecionarDistancia', 10, 10)
             .click('@ordenarPorAvaliacoes');
 
     },

@@ -40,7 +40,8 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         btnAplicarFiltros: {
-            selector: '//*[@id="app"]/div/div[2]/div/div[4]/div/div[2]/div/footer/button'
+            selector: '//button[contains(text(), "Aplicar filtros")]',
+            locateStrategy: 'xpath'
         },
         clickPage: {
             selector: 'div[class="sc-jqIZGH gOxefV"]'

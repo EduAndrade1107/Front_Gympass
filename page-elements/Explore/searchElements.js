@@ -43,11 +43,11 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         selectCard: {
-            selector: '//*[@id="app"]/div/div[2]/div/div[5]/div/div[2]/div/div[2]/div[1]/div[1]'
+            selector: '//*[@id="app"]/div/div[2]/div/div[5]/div/div[2]/div/div[2]/div[1]/div[1]/a[2]/div/div/div[1]/div[1]/h3/div/div',
+            locateStrategy: 'xpath'
         },
         selectGymList: {
-            selector: '//*[@id="app"]/div/div[2]/div/div[5]/div/div[2]/div/div[2]/div[1]/div[1]',
-            locateStrategy: 'xpath'
+            selector: 'a[id="ListItem"',
         }
     }
 }

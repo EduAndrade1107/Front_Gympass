@@ -11,7 +11,10 @@ module.exports = {
         server_path: chromedriver.path,
         port: 9515,
     },
-
+    "test_workers": {
+        "enabled": true,
+        "workers": 4
+      },
     test_settings: {
         default: {
             desiredCapabilities: {
@@ -27,7 +30,7 @@ module.exports = {
                     excludeSwitches: [
                         'enable-automation'
                     ],
-                    useAutomationExtension: false
+                    useAutomationExtension: true
                 }
             }
         }

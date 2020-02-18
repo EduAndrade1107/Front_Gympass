@@ -56,6 +56,5 @@ module.exports = {
         .closeWindow()
         window.changeWindowContext(client, 0)
         return gymPage
-        .pause(500)
     }
 }
