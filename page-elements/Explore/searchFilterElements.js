@@ -36,7 +36,7 @@ module.exports = {
             selector: 'div[id="rating"]'
         },
         selecionarDistancia: {
-            selector: '//h1[contains(text(), "Distância")]',
+            selector: '//*[@id="app"]/div/div[2]/div/div[4]/div/div[2]/div/div/div/div/div/div[5]',
             locateStrategy: 'xpath'
         },
         btnAplicarFiltros: {

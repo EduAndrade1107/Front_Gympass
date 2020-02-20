@@ -25,13 +25,12 @@ module.exports = {
     selectOrdenarPor: () => {
         return searchFilters
             .moveToElement('@selecionarDistancia', 10, 10)
-            .click('@ordenarPorAvaliacoes');
-
+            .click('@ordenarPorAvaliacoes')
     },
     selectDistancia: () => {
         return searchFilters
             .moveToElement('@selecionarDistancia', 10, 10)
-            .click('@selecionarDistancia');
+            .click('@selecionarDistancia')
     },
     btnAplicarFiltros: () => {
         return searchFilters
