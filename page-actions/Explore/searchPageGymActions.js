@@ -36,7 +36,6 @@ module.exports = {
             .moveToElement('@assertLabelEBomSaber', 10, 10)
             .waitForElementPresent('@assertLabelEBomSaber')
     },
-
     assertLabelInformacoesGerais: () => {
         return gymPage
             .moveToElement('@assertLabelInformacoesGerais', 10, 10)

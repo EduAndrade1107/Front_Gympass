@@ -9,7 +9,7 @@ module.exports = {
     },
     btnFiltros: () => {
         return search
-            .waitForElementVisible('@btnFiltros', 6000)
+            .waitForElementVisible('@btnFiltros', 10000)
             .click('@btnFiltros');
     },
     assertBtnFiltros: () => {
@@ -18,7 +18,7 @@ module.exports = {
     },
     inputAcademia: () => {
         return search
-            .waitForElementPresent('@inputAcademia', 6000)
+            .waitForElementPresent('@inputAcademia', 10000)
             .click('@inputAcademia')
             .setValue('@inputAcademia', "Ride State")
     },
@@ -45,7 +45,7 @@ module.exports = {
     },
     clickCard: () => {
         return search
-        .waitForElementPresent('@selectCard', 5000)
+        .waitForElementPresent('@selectCard', 10000)
         .click('@selectCard')
             //.assert.containsText('@assertCardEndereco', "Rua Coronel Joaquim Ferreira Lôbo, 152")
             //.assert.containsText('@assertCardDisponibilidade', "no seu plano")

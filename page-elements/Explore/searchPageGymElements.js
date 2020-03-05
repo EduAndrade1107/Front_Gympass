@@ -36,6 +36,5 @@ module.exports = {
             selector: '//*[@id="modal"]/div/div/div[1]/div/span',
             locateStrategy: 'xpath'
         },
-
     }
 }
