@@ -1,7 +1,7 @@
 Feature: Gyms Search List Suggestion
 
     Background: Login
-        Given I am logged in Gympass webpage with valid "email" and "senha"
+        Given I am logged in Gympass webpage with valid "automacaoe2e@cowabunga.com" and "Gympass123"
         And I click on my Gyms
 
     Scenario: Select Gym Suggestion

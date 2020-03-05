@@ -20,7 +20,6 @@ module.exports = {
         return search
             .waitForElementPresent('@inputAcademia', 6000)
             .click('@inputAcademia')
-            .pause(2500)
             .setValue('@inputAcademia', "Ride State")
     },
     selectGymList: () => {

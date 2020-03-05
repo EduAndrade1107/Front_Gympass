@@ -1,7 +1,7 @@
 Feature: Gym Evaluation
 
     Background: Login Gym Page
-        Given I am logged in Gympass webpage with valid "email" and "senha"
+        Given I am logged in Gympass webpage with valid "automacaoe2e@cowabunga.com" and "Gympass123"
         And I select gym
         And a new page open
 

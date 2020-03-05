@@ -13,4 +13,4 @@ Feature: Login
 
         Examples:
             | email | password |
-            | email | senha    |
+            | automacaoe2e@cowabunga.com | Gympass123    |
