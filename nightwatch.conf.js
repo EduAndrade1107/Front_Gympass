@@ -11,6 +11,13 @@ module.exports = {
         server_path: chromedriver.path,
         port: 9515,
     },
+
+    screenshots: {
+        enabled: true,
+        on_failure: true,
+        on_error: true,
+        path: 'tests_output'
+    }
   
     test_settings: {
         default: {
