@@ -11,29 +11,24 @@ module.exports = {
         server_path: chromedriver.path,
         port: 9515,
     },
-    "test_workers": {
-        "enabled": true,
-        "workers": 4
-      },
+    // "test_workers": {
+    //     "enabled": true,
+    //     "workers": 4
+    //   },
     test_settings: {
         default: {
             desiredCapabilities: {
                 browserName: 'chrome',
                 'goog:chromeOptions': {
                     args: [
-                        'start-fullscreen',
+                        // 'start-fullscreen',
                         'start-maximized',
                         '--disable-infobars',
                         '--disable-notifications',
                         '--ignore-ssl-errors',
                         '-env=headless',
                         '--disable-gpu',
-                        '--disable-impl-side-painting',
-                        '--disable-gpu-sandbox',
-                        '--disable-accelerated-2d-canvas',
-                        '--disable-accelerated-jpeg-decoding',
-                        '--no-sandbox',
-                        '--test-type=ui'
+                        '--no-sandbox'
                     ],
                     excludeSwitches: [
                         'enable-automation'
