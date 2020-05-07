@@ -26,7 +26,14 @@ module.exports = {
                         '--disable-infobars',
                         '--disable-notifications',
                         '--ignore-ssl-errors',
-                        '-env=headless'
+                        '-env=headless',
+                        '--disable-gpu',
+                        '--disable-impl-side-painting',
+                        '--disable-gpu-sandbox',
+                        '--disable-accelerated-2d-canvas',
+                        '--disable-accelerated-jpeg-decoding',
+                        '--no-sandbox',
+                        '--test-type=ui'
                     ],
                     excludeSwitches: [
                         'enable-automation'
