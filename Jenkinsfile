@@ -17,19 +17,19 @@ pipeline{
             }
                post{
                 always{
-                    junit testDataPublishers:[[$class: 'AttachementPublisher']], testResults: "tests_output/*.xml"
+                    junit testDataPublishers:[[$class: 'AttachmentPublisher']], testResults: "tests_output/*.xml"
                 }
             }
         }
-        stage('Staging') {
-            steps {
-                sh "npm run test"
-            }
-            post{
-                always{
-                    junit testDataPublishers:[[$class: 'AttachementPublisher']], testResults: "tests_output/*.xml"
-                }
-            }
-        }
-    }
+    //     stage('Staging') {
+    //         steps {
+    //             sh "npm run test"
+    //         }
+    //         post{
+    //             always{
+    //                 junit testDataPublishers:[[$class: 'AttachmentPublisher']], testResults: "tests_output/*.xml"
+    //             }
+    //         }
+    //     }
+    // }
 }
