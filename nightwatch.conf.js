@@ -59,9 +59,16 @@ module.exports = {
               // acceptInsecureCerts: true,
               'moz:firefoxOptions': {
                 args: [
-                  '-headless',
-                  '-verbose',
-                  '--no-sandbox'
+                    'start-fullscreen',
+                        'start-maximized',
+                        '--disable-infobars',
+                        '--disable-notifications',
+                        '--ignore-ssl-errors',
+                        '-env=headless',
+                        '--disable-gpu',
+                        '--no-sandbox',
+                        '--disable-dev-shm-usage',
+                        '--verbose'
                 ],
               }
             }
