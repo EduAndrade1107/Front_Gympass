@@ -25,7 +25,8 @@ module.exports = {
                         'start-maximized',
                         '--disable-infobars',
                         '--disable-notifications',
-                        '--ignore-ssl-errors'
+                        '--ignore-ssl-errors',
+                        '-env=headless'
                     ],
                     excludeSwitches: [
                         'enable-automation'

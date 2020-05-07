@@ -10,7 +10,7 @@ module.exports = {
         window.changeWindowContext(client, 1);
 
         return facebookLogin
-                .waitForElementVisible('@facebookEmailInput')
+                .waitForElementVisible('@facebookEmailInput', 10000)
                 .setValue('@facebookEmailInput', facebookEmail);
     },
 
