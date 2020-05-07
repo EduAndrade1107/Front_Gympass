@@ -15,6 +15,11 @@ pipeline{
             steps {
                 sh "npm test"
             }
+               post{
+                always{
+                    junit testResults: "tests_output/*.xml"
+                }
+            }
         }
         stage('Staging') {
             steps {
