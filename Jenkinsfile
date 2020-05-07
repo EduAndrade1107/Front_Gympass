@@ -14,7 +14,7 @@ pipeline{
         stage('Tests') {
             steps {
                 sh "npm test"
-                junit ""
+                junit testResults: "tests_output/*.xml"
             }
         }
         stage('Staging') {
