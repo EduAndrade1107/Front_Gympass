@@ -21,7 +21,7 @@ pipeline{
                 }
             }
         }
-    }
+        
         stage('Staging') {
             steps {
                 sh "npm run test"
