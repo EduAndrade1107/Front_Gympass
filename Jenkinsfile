@@ -1,6 +1,9 @@
 pipeline{
     agent {
-        docker {image "eduqa/node-wd"}
+        docker {
+            image "eduqa/node-wd"
+            args "--network=skynet"
+        }
     }
     stages {
         stage('Build') {
