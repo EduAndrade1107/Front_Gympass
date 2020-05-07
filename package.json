@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mkdirp report && cucumber-js --require cucumber.conf.js --require steps-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report.json",
-    "test:ci": "mkdirp report && cucumber-js --require cucumber.conf.js --require steps-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report.json --env=headless"
+    "test": "mkdirp report && cucumber-js --require cucumber.conf.js --require steps-definitions --format node_modules/cucumber-pretty --format json:report/cucumber_report.json"
   },
   "keywords": [],
   "author": "",
