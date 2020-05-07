@@ -29,8 +29,6 @@ module.exports = {
     clickEnter: () => {
         search
             .setValue('@inputAcademia', new Array(1) .fill(search.api.Keys.ENTER))
-            // .waitForElementPresent('@labelResultadoBusca', 6000)
-            //.assert.containsText('@labelResultadoBusca', 'Resultados com ride state');
     },
     inputLocalizacaoAtual: () => {
         return search
@@ -47,8 +45,5 @@ module.exports = {
         return search
         .waitForElementPresent('@selectCard', 10000)
         .click('@selectCard')
-            //.assert.containsText('@assertCardEndereco', "Rua Coronel Joaquim Ferreira Lôbo, 152")
-            //.assert.containsText('@assertCardDisponibilidade', "no seu plano")
-           // .assert.containsText('@assertCardHorario', "Fecha às 22h");
     }
 }

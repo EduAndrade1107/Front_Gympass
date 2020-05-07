@@ -14,6 +14,7 @@ pipeline{
         stage('Tests') {
             steps {
                 sh "npm test"
+                junit ""
             }
         }
         stage('Staging') {
