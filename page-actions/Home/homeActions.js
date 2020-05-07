@@ -7,7 +7,7 @@ module.exports = {
     openGympassHomePage: () => {
         return home
                 .navigate()
-                .waitForElementVisible('@body', 10000);
+                .waitForElementPresent('@body', 10000);
     },
 
     clickOnLoginButton: () => {

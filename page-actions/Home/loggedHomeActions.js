@@ -18,7 +18,7 @@ module.exports = {
 
     clickOnProfileOption: () => {
         return loggedHome
-                .waitForElementVisible('@profileOption', 10000)
+                .waitForElementPresent('@profileOption', 10000)
                 .click('@profileOption');
     }
 }

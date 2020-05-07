@@ -6,7 +6,7 @@ module.exports = {
 
     insertEmail: (email) => {
         return login
-                .waitForElementVisible('@emailInput', 10000)
+                .waitForElementPresent('@emailInput', 10000)
                 .setValue('@emailInput', email);
     },
 
@@ -17,13 +17,13 @@ module.exports = {
 
     insertPassword: (password) => {
         return login
-                .waitForElementVisible('@passwordInput', 10000)
+                .waitForElementPresent('@passwordInput', 10000)
                 .setValue('@passwordInput', password);
     },
 
     clickOnForgetPasswordLink: () => {
         return login
-                .waitForElementVisible('@forgetPasswordLink', 10000)
+                .waitForElementPresent('@forgetPasswordLink', 10000)
                 .click('@forgetPasswordLink');
     },
 
@@ -34,7 +34,7 @@ module.exports = {
 
     clickOnFacebookLoginButton: () => {
         return login
-                .waitForElementVisible('@facebookLoginButton', 10000)
+                .waitForElementPresent('@facebookLoginButton', 10000)
                 .click('@facebookLoginButton');
     }
 }
