@@ -21,15 +21,15 @@ pipeline{
                 }
             }
         }
-    //     stage('Staging') {
-    //         steps {
-    //             sh "npm run test"
-    //         }
-    //         post{
-    //             always{
-    //                 junit testDataPublishers:[[$class: 'AttachmentPublisher']], testResults: "tests_output/*.xml"
-    //             }
-    //         }
-    //     }
-    // }
+        stage('Staging') {
+            steps {
+                sh "npm run test"
+            }
+            post{
+                always{
+                    junit testDataPublishers:[[$class: 'AttachmentPublisher']], testResults: "tests_output/*.xml"
+                }
+            }
+        }
+    }
 }
