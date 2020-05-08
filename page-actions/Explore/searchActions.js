@@ -4,7 +4,7 @@ const search = client.page.Explore.searchElements();
 module.exports = {
     menuBusca: () => {
         return search
-            .assert.containsText('@menuBusca', "Busca")
+            //.assert.containsText('@menuBusca', "Busca")
             .click('@menuBusca');
     },
     btnFiltros: () => {
