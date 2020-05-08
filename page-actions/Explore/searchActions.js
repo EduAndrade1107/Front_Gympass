@@ -11,16 +11,17 @@ module.exports = {
     btnFiltros: () => {
         return search
             .waitForElementPresent('@btnFiltros', 20000)
-            .pause(15000)
+            .pause(10000)
             .click('@btnFiltros');
     },
     assertBtnFiltros: () => {
         return search
-            .waitForElementPresent('@btnFiltros');
+            .waitForElementPresent('@btnFiltros', 20000);
     },
     inputAcademia: () => {
         return search
-            .waitForElementPresent('@inputAcademia', 20000)
+            // .waitForElementPresent('@inputAcademia', 25000)
+            .pause(7000)
             .click('@inputAcademia')
             .pause(5000)
             .setValue('@inputAcademia', "Ride State")
@@ -46,7 +47,7 @@ module.exports = {
     },
     clickCard: () => {
         return search
-        .waitForElementPresent('@selectCard', 10000)
+        .waitForElementPresent('@selectCard', 15000)
         .click('@selectCard')
     }
 }

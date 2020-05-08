@@ -11,5 +11,5 @@ Feature: Filters Search
         And click value plan
         And click hour functioning 24hs
         And click owns
-        And click order by
+        # And click order by
         And click button to apply filters
