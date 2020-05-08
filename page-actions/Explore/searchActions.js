@@ -5,20 +5,22 @@ module.exports = {
     menuBusca: () => {
         return search
             //.assert.containsText('@menuBusca', "Busca")
+            .waitForElementPresent('@menuBusca', 20000)
             .click('@menuBusca');
     },
     btnFiltros: () => {
         return search
-            .waitForElementVisible('@btnFiltros', 10000)
+            .waitForElementPresent('@btnFiltros', 20000)
+            .pause(15000)
             .click('@btnFiltros');
     },
     assertBtnFiltros: () => {
         return search
-            .waitForElementVisible('@btnFiltros');
+            .waitForElementPresent('@btnFiltros');
     },
     inputAcademia: () => {
         return search
-            .waitForElementPresent('@inputAcademia', 10000)
+            .waitForElementPresent('@inputAcademia', 20000)
             .click('@inputAcademia')
             .setValue('@inputAcademia', "Ride State")
     },

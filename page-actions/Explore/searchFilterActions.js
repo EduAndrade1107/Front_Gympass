@@ -5,7 +5,7 @@ const searchFilters = client.page.Explore.searchFilterElements();
 module.exports = {
     sliderValorPlano: () => {
         return searchFilters
-            .waitForElementVisible('@sliderValorPlano', 10000)
+            .waitForElementVisible('@sliderValorPlano', 20000)
             .click('@sliderValorPlano')
             .setValue('@sliderValorPlano', new Array(5).fill(searchFilters.api.Keys.RIGHT_ARROW));
 
