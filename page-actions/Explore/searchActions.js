@@ -4,26 +4,25 @@ const search = client.page.Explore.searchElements();
 module.exports = {
     menuBusca: () => {
         return search
-            //.assert.containsText('@menuBusca', "Busca")
             .waitForElementPresent('@menuBusca', 20000)
             .click('@menuBusca');
     },
     btnFiltros: () => {
         return search
-            .waitForElementPresent('@btnFiltros', 20000)
             .pause(10000)
             .click('@btnFiltros');
     },
     assertBtnFiltros: () => {
         return search
+            .pause(5000)
             .waitForElementPresent('@btnFiltros', 20000);
     },
     inputAcademia: () => {
         return search
             // .waitForElementPresent('@inputAcademia', 25000)
-            .pause(7000)
-            .click('@inputAcademia')
             .pause(5000)
+            .click('@inputAcademia')
+            .pause(3000)
             .setValue('@inputAcademia', "Ride State")
     },
     selectGymList: () => {
