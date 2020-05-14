@@ -10,9 +10,9 @@ As soon as test environment is ready to run on CI, all the new information will 
 ### To run this project you will need the bellow tools:
 ```bash
 Git
-Node (my current version is v12.13.0)
+Node (my current version is disponible LTS (nodejs.org)
 NPM (my current version is v6.12.0)
-Your best code editor or IDE
+Your best code editor or IDE(VSCode)
 ```
 
 ### To install the project you just need to clone the project and run the bellow commands 
